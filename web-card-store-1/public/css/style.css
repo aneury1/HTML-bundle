@@ -1,0 +1,198 @@
+body{
+    /* background: -moz-linear-gradient(#bac6d8, #4f4f4f); */
+    background: #e3e4e5;
+    font-size:1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0; 
+    width: 100%;
+    height: 10%;
+    background:	 #000033;
+    -webkit-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    display: flex;
+}
+
+ 
+
+.left-panel{
+    position: fixed;
+    top:10%;
+    left:0; 
+    margin-bottom:2px;
+    width: 16%;
+    height: 100%;
+    background:	 #3da078;
+    -webkit-box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    overflow:hidden;
+    z-index: 1000;
+}
+
+.right-panel
+{
+    position: fixed;
+    top:10%;
+    left:16%; 
+    margin-bottom:2px;
+    width: 84%;
+    height: 100%;
+    background:	 #d0e0da;
+    -webkit-box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 28px 2px rgba(0,0,0,0.75);
+    overflow:scroll;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+    margin-bottom: 10%;
+}
+
+.card-container{
+    width: 20%;
+    height: 40%;
+    background: #efefef;
+    -webkit-box-shadow: 6px 7px 28px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 28px -12px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 28px -12px rgba(0,0,0,0.75);
+    border:none;
+    margin:20px;
+    border-radius: 10px;
+}
+
+.bottom{
+    margin-top:10px;
+    position: fixed;
+    top:90%;
+    left:16%; 
+    width: 100%;
+    height: 10%;
+    background:	 #000033;
+    -webkit-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    display: flex;
+}
+
+.adv{
+    color:white;
+    font-weight: bolder;
+    margin-left:10px;
+}
+
+.btn-blue{
+    color:white;
+    font-weight: bolder;
+    padding:10px;
+    background:#0e3dd6;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    -webkit-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 28px -11px rgba(0,0,0,0.75);
+    line-height: 70px;
+}
+.btn-blue:hover{
+    background: #05258c;
+    cursor: pointer;
+}
+
+.card-container > .picture{
+    width: 30%;
+    height: 30%;
+    border-radius: 20%;
+    margin-left:20px;
+    margin-top:10px;
+    border: 2px #8f95aa solid;
+    position: relative;
+}
+
+.card-container > .side-title{
+    position: absolute;
+    top:-20%;
+    font-weight: bolder;
+}
+
+.card-container > .price{
+    position: relative;
+    top:-18%;
+    left: 40%;
+    font-weight: lighter;
+    color:#099b24;
+    margin-top:10px;
+}
+
+ 
+
+.card-container > .like{
+    position: relative;
+    top:-10%;
+    left: 6%;
+    font-weight: lighter;
+    color:#FFF;
+    background:#1038b2;
+    margin-top:10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.card-container > .like:hover{
+    background: #04227c;
+    color:#bcc1d1;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 7px 28px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 28px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 28px -10px rgba(0,0,0,0.75);
+}
+
+.card-container > .share{
+    position: relative;
+    top:-10%;
+    left: 10%;
+    font-weight: lighter;
+    color:#FFF;
+    background:#1038b2;
+    margin-top:10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.card-container > .share:hover{
+    background: #04227c;
+    color:#bcc1d1;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 7px 28px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 28px -17px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 28px -17px rgba(0,0,0,0.75);
+}
+
+.ctx-desc
+{
+    position: relative;
+    top:6%;
+    width: 80%;
+    margin-left:10%;
+    word-wrap: break-word;
+    background: #FFF;
+    border-radius: 3px;
+    padding:10px;
+    padding-bottom: 20px;
+    
+}
+
+.ctx-desc > p{
+    font-weight: 200;
+    font-size:1.em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
