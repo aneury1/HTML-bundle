@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+
+
+  .header{
+      width: 100%;
+      background: purple;
+  }
+  .header > .title,
+  .header > ul{
+       width: 100%;
+       text-align: center;
+  }
+  .header > ul > li{
+      list-style: none;
+  }
+  .header > ul > li:nth-child(odd){
+      background: #9308a5;
+  }
+
+  .header > ul > li:hover:nth-child(odd){
+      background: #da70ef;
+    
+  }
+  .header > ul > li:hover:nth-child(even){
+      background: #da70ef;
+   
+  }
+  .header > ul > li:hover:nth-child(odd) > a{color:black;}
+  .header > ul > li:hover:nth-child(even) > a{color:yellow;}
+  .title:hover{
+      transform: rotate(-20deg);
+  }
+
+  .header > ul > li >a{
+      text-decoration: none;
+      font-size:2em;
+      font-weight: bolder;
+      color:white;
+  }
+  .header > .title{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:3em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 1px #323232;
+  }
+
+
+  }
+
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Title</h1>
+        <ul class="menu">
+            <li><a href="">inicio</a></li>
+            <li><a href="">inicio</a></li>
+            <li><a href="">inicio</a></li>
+            <li><a href="">inicio</a></li>
+        </ul>
+
+     
+
+    </div>
+</body>
+</html>
