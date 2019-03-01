@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+       .stat{
+           margin-top:5px;
+           position: relative;
+           top:10px;
+           padding:20px;
+           background:#dddddd;
+           border-radius: 6px;
+           width:300px;
+       }
+
+      .stat + a{
+          position: relative;
+          color: #11AAFF;
+          text-decoration: none;
+          padding:20px;
+          top:10px;
+      }
+      .stat + a ~ .inner_comment 
+      {
+           
+          position: relative;
+           top:10px;
+           left:30px;
+           padding:20px;
+           background:#eee000;
+           border-radius: 6px;
+           width:300px;
+           margin-top:4px;
+           margin-left:20px;
+      }
+
+      .comment-box{
+          position: relative;
+          top:5px;
+          left:5px;
+          margin-top:15px;
+          display: none;
+      }
+
+      .comment-box > input[type=text]{
+          
+          border: none;
+          font-size:1.5em;
+          background: #dddddd;
+          border-radius: 5px;
+          margin-top:2px;
+      }
+      .comment-box > input[type=button]{
+          border: none;
+          font-size:1.0em;
+          background: #29ce3c;
+          padding: 5px 5px;
+          margin-left:5px;
+          color:white;
+          border-radius: 5px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="stat">Este es un comentario</div>
+        <a href="#"> agregar  comentario</a>
+           <div class="inner_comment">Otro comentario</div>
+           <div class="inner_comment">Otro comentario 2</div>
+    <div class="stat">Este es un comentario</div>
+           <a href="#"> agregar  comentario</a>
+              <div class="inner_comment">Otro comentario</div>
+              <div class="inner_comment">Otro comentario 2</div>
+              <form class="comment-box">
+                  <input type="text" class="input-text">
+                  <input type="button" value="agregar">
+                </form>
+                <div class="stat">Este es un comentario</div>
+                <a href="#"> agregar  comentario</a>
+                   <div class="inner_comment">Otro comentario</div>
+                   <div class="inner_comment">Otro comentario 2</div>
+                   <form class="comment-box">
+                       <input type="text" class="input-text">
+                       <input type="button" value="agregar">
+                     </form>
+ <script> 
+
+   var stat = document.getElementsByClassName('stat');
+   
+   
+
+ </script>
+</body>
+</html>
