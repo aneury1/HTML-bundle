@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Artifika|Gugi');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctx{
+    display:inline-block;
+    padding:0;
+    margin: 0;
+}
+
+.store-header{
+    width: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    background: #000;
+}
+.slogan{
+    color:#636363;
+    font-size: 20px;
+}
+ .title{
+    margin-top:10px;
+    font-family: 'Gugi', cursive;
+    margin-left:100px;
+    color:white;
+    display: inline-block;
+    line-height: 40px;
+}
+.right{
+    float: right;
+}
+.top-menu{
+    display: inline-block;
+    margin-right: 20px;
+}
+.top-menu > li{
+    display: inline-flex;
+    padding: 0px 20px; 
+    line-height: 53px;
+    height: 100%;
+}
+.top-menu > li:hover{
+    background: #434343;
+}
+.top-menu > li > a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+.top-menu > li > a:hover{
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* second bar*/
+.search-bar{
+    width: 100%;
+    background: #090909;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.slogan-icon{
+    width: 38px;
+    height: 38px;
+    margin:10px  45px 5px 4px;
+    border-radius: 2px;
+    border:none ;
+    outline: 1px solid rgba(255,255,255,0.1);
+}
+.search-input{
+    padding-left:20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 400px;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    font-size: 2.0em;
+}
+.search-btn{
+    margin-left:10px;
+    padding:10px;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    font-size: 1.3em; 
+    font-weight: bolder;
+    border:none;
+    color:#434343
+}
+.shoping-colletion:hover{background: gray;cursor: pointer; border-radius: 6px;}
+.shoping-colletion{
+    color:white;
+    margin-left:32px;
+    padding:4px;
+    padding-top:7px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+#value-cart{
+    background:red;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.search-btn:hover{
+    margin-left:10px;
+    padding:10px;
+    background: #636363;
+    border:1px solid white;
+    border-radius: 3px;
+    font-size: 1.3em; 
+    font-weight: bolder;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+
+.offer-slogan{
+    width: 100%;
+    height:450px;
+    position: relative;
+    top:0;
+    left:0;
+    background: url('love-ring.jpg') no-repeat ;
+    background-clip: content-box;
+    background-size: 100%;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.box-offer-msg{
+    width: 400px;
+    height: 80%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    font-family: 'Sumana', serif;
+    color:white;
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Sumana');
+.box-offer-title{
+    width: 100%;
+    margin-top:20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Yeseva One', cursive;
+    color:white;
+}
+
+
+.center{
+    width: 100%;
+    text-align: center;
+    word-break: break-all;
+}
+
+
+.offer-btn{
+    display: block;
+    width: 100%;
+    font-size:2rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color:#434343;
+}
+
+
+.category-outside{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-ctx{
+    margin-top:4px;
+    background: #eee;
+    width: 80%;
+    height: auto;
+    display: inline-flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+}
+
+.item
+{
+    margin: 4px;
+    padding:10px;
+    width: 24%;
+    height: 200px;
+    background :black;
+}
+.item-title{
+    position: relative;
+    width: 100%;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.title-img{
+    height: 190px;
+    width: 100%;
+    position: relative;
+    top:-25px;
+    left:0;
+}
+
+
+/*
+   mobile part.
+*/
+@media screen and (max-width: 600px) {
+  .right{float:none;}
+  .top-menu{
+    width: 100%;
+    display: block;
+    margin-right: 0px;
+}
+.top-menu > li{
+    padding:10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} 
+
+.top-menu > li:hover{
+    background:#545454;
+}
+
+.top-menu > li > a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+.box-offer-msg
+{
+    margin-left:5px;
+    margin-right: 5px;
+    height: 60%;
+    margin-bottom: 90px;
+}
+
+.category-ctx{
+    margin-top:4px;
+    background: gray;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.item
+{
+    margin: 4px;
+    padding:10px;
+    width: 100%;
+    height: 200px;
+    background :blue;
+}
+
+
+}
